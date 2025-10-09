@@ -1,0 +1,92 @@
+body {
+  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar{
+    background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.step {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  transition: background 0.3s ease;
+}
+
+.step.active {
+  background: #007bff;
+}
+
+.step.completed {
+  background: #28a745;
+}
+
+/* Form step visibility */
+.form-step {
+  display: none;
+}
+
+.form-step-active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Button spacing */
+button {
+  min-width: 100px;
+  margin-top: 15px;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.autofilled {
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.step.normal {
+    background-color: #d3d3d3; /* light gray */
+    color: #fff;
+}
+.step.completed {
+    background-color: #28a745; /* green */
+    color: #fff;
+}
+.step.active {
+    background-color: #0d6efd; /* blue */
+    color: #fff;
+}
